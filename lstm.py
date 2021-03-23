@@ -198,7 +198,7 @@ train_loader = torch.utils.data.DataLoader(train_data,
                                            batch_size=64,
                                            shuffle=True, num_workers=8)
 
-valid_data = EmotionDataset('./datasets/data_ravdess_savee_valid_test.csv', config=config)
+valid_data = EmotionDataset(METADATA_VALID_PATH, config=config)
 valid_loader = torch.utils.data.DataLoader(valid_data,
                                            batch_size=64,
                                            shuffle=False, num_workers=8)
